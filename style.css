@@ -1,0 +1,124 @@
+body {
+    font-family: 'Roboto', sans-serif; 
+    background-color: #ffffff;
+}
+
+.container {
+    max-width: 990px;
+    margin: 0 auto;
+}
+
+.header img {
+    width: 100%;
+}
+
+.welcome-message {
+    text-align: center;
+    font-size: 40px; /* Mengurangi ukuran font */
+    font-weight: bold;
+    color: #000;
+    margin: 20px 0; /* Mengurangi margin */
+}
+
+.ramen-gallery {
+    display: flex;
+    justify-content: space-between; /* Ini akan memberi jarak antar gambar */
+    padding: 0; /* Mengurangi padding */
+}
+
+.ramen-gallery img {
+    width: 100%; /* Menyesuaikan ukuran untuk ruang yang lebih padat */
+    height: auto;
+    object-fit: cover;
+}
+
+.menu-buttons {
+    display: flex;
+    justify-content: center;
+    margin: 15px 0; /* Mengurangi margin */
+}
+
+.button-box {
+    margin: 0 5px; /* Mengurangi margin antar tombol */
+    flex: 1;
+    transition: transform 0.3s;
+}
+
+.button-box:hover {
+    transform: scale(1.05); /* Mengurangi efek skala */
+}
+
+.button-box img {
+    width: 100%;
+    height: auto;
+}
+
+.menu-details {
+    margin: 20px 0; /* Mengurangi margin untuk menghemat ruang */
+    text-align: center; /* Memastikan teks terpusat di menu detail */
+}
+
+.menu-item {
+    margin: auto;
+    position: relative; /* Membuat posisi relatif untuk konten */
+    display: inline-block; /* Menjaga gambar dan teks dalam satu blok */
+}
+
+.menu-text {
+    position: absolute; /* Posisi teks absolut untuk menempatkannya di atas gambar */
+    top: 30px; 
+    bottom: 100px;
+    color: #378dbe; /* Warna teks */
+    padding: 10px; /* Menambahkan padding di sekitar teks */
+    border-radius: 10px; /* Membuat sudut teks melengkung */
+    background-color: #ffffff;
+    height: 77%;
+    width: auto;
+    font-size: 15px;
+}
+.menu-content {
+    display: inline-block; /* Menggunakan inline-block agar gambar dan teks tetap dalam satu baris */
+    vertical-align: bottom; /* Mengatur alignment vertikal */
+    margin: 0; /* Menghilangkan margin */
+}
+.menu-details img {
+    margin: auto;
+    display: block;
+    width: 100%; /* Memastikan gambar memenuhi ruang */
+}
+
+/* Atur posisi teks untuk menu 1 dan 3 ke kanan */
+.menu-item#menu1 .menu-text,
+.menu-item#menu3 .menu-text {
+    right: 20px; /* Jarak dari kanan */
+    left: auto; /* Menghapus jarak dari kiri */
+}
+
+/* Atur posisi teks untuk menu 2 ke kiri */
+.menu-item#menu2 .menu-text {
+    left: 20px; /* Jarak dari kiri */
+    right: auto; /* Menghapus jarak dari kanan */
+}
+
+.footer {
+    position: relative; /* Posisi relatif untuk anak-anak */
+    text-align: center; /* Memusatkan teks footer */
+    margin: -15px 0; /* Menambah margin atas dan bawah untuk footer */
+}
+
+.footer-text {
+    position: absolute; /* Posisi absolut untuk menempatkannya di atas gambar */
+    top: 80%; /* Menyesuaikan jarak dari atas gambar */
+    left: 50%;
+    transform: translate(-50%, -50%); /* Memusatkan teks secara horizontal dan vertikal */
+    color: #ffffff; /* Warna teks yang kontras */
+    font-size: 24px; /* Ukuran font */
+    white-space: nowrap; /* Menghindari pemotongan teks */
+    text-shadow: 
+        3px 3px 0 #378dbe; 
+}
+
+.footer img {
+    width: 100%; /* Memastikan gambar footer memenuhi ruang */
+    display: block; /* Menghilangkan spasi di bawah gambar */
+}
